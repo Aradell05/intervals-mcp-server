@@ -9,4 +9,4 @@ from mcp.server.fastmcp import FastMCP  # pylint: disable=import-error
 
 from intervals_mcp_server.api.client import setup_api_client
 
-mcp: FastMCP = FastMCP("intervals-icu", lifespan=setup_api_client)  # pylint: disable=invalid-name
+mcp: FastMCP = FastMCP("intervals-icu", lifespan=setup_api_client, host="0.0.0.0", port=8000)
